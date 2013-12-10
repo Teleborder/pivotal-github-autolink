@@ -1,0 +1,9 @@
+{
+  "name": "My extension",
+  "content_scripts": [
+    {
+    "matches": ["https://github.com/*/*/pull/*"],
+    "js": ["src/autolink.js"]
+  }
+  ]
+}
