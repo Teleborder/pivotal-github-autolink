@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Pivotal Tracker link formatter for github issues",
+  "name": "Pivotal Tracker formatter for github issues",
   "description": "This extension automatically formats pivotal links to look a little nicer",
   "version": "1.0",
   "content_scripts": [
