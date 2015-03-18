@@ -1,9 +1,4 @@
 $(function() {
-  $('body').on('submit', 'form.js-comment-update', function(evt) {
-    var issueBody = $('#issue_body'),
-        newBody = issueBody.val().replace(/^https.*\.pivotaltracker\.com\/story\/show\/(\d*)/gmi, "#[$1]($&)");
-
-    issueBody.val(newBody);
-    return true;
-  });
+  nodesToReplace = $('.js-issue-title, .js-comment-body');
+  nodesToReplace.html(nodesToReplace.html().replace(/\[(?:Finishes|Delivers|Fixes) #(\d+)\]/gi, "<a href=\"https://www.pivotaltracker.com/story/show/$1\">$&</a>"));
 });
