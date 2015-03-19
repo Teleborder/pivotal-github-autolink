@@ -1,7 +1,7 @@
 Pivotal GitHub Autolink
 =======================
 
-Automatically turns Pivotal references (like [Finishes #12345678]) into links to the appropriate Pivotal story.
+Automatically turns Pivotal references in comments and issue titles (like [Finishes #12345678]) into links to the appropriate Pivotal story.
 
 Installation
 ------------
